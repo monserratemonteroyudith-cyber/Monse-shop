@@ -1,0 +1,624 @@
+/* Colores y estilos generales de la tienda */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F4F8FF;
+    color: #17365D;
+}
+
+/* Encabezado */
+
+header {
+    background-color: #FFFFFF;
+    padding: 25px 20px;
+    text-align: center;
+    border-bottom: 1px solid #DCE8F8;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #17365D;
+}
+
+header p {
+    color: #7186A5;
+    margin-bottom: 0;
+}
+
+/* Portada principal */
+
+.portada {
+    text-align: center;
+    padding: 70px 20px;
+    background-color: #E1EDFF;
+}
+
+.portada h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.portada p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Botón principal */
+
+.boton {
+    display: inline-block;
+    background-color: #17365D;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.boton:hover {
+    background-color: #2D5688;
+}
+
+/* Secciones */
+
+section {
+    padding: 35px 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #17365D;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Catálogo de productos */
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.producto {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 14px;
+    border: 1px solid #DCE8F8;
+    box-shadow: 0 4px 12px rgba(23, 54, 93, 0.08);
+}
+
+.foto-producto {
+    background-color: #E1EDFF;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 64px;
+    border-radius: 10px;
+}
+
+.producto h3 {
+    color: #17365D;
+    margin-bottom: 8px;
+}
+
+.producto p {
+    line-height: 1.5;
+}
+
+.precio {
+    color: #244F85;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.producto .boton {
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+@media (max-width: 650px) {
+    .productos {
+        grid-template-columns: 1fr;
+    }
+}
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px;
+}
+.foto-producto {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.foto-producto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+#pedidos-especiales {
+    background-color: #f0f7ff;
+    padding: 35px 20px;
+    margin: 30px auto;
+    border-radius: 18px;
+    max-width: 800px;
+}
+
+#pedidos-especiales h2 {
+    color: #234b78;
+    text-align: center;
+}
+
+#pedidos-especiales p {
+    text-align: center;
+    line-height: 1.6;
+}
+
+#formulario-pedido {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 550px;
+    margin: 25px auto 0;
+}
+
+#formulario-pedido label {
+    color: #234b78;
+    font-weight: bold;
+}
+
+#formulario-pedido input,
+#formulario-pedido select,
+#formulario-pedido textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #c5d9ef;
+    border-radius: 10px;
+    font: inherit;
+    background-color: white;
+}
+
+#formulario-pedido textarea {
+    resize: vertical;
+}
+/* Diseño de la sección de pedidos especiales */
+
+#pedidos-especiales {
+    background: linear-gradient(135deg, #f2f8ff, #e3efff);
+    padding: 35px 22px;
+    margin: 40px auto;
+    border: 1px solid #d5e6fa;
+    border-radius: 22px;
+    max-width: 800px;
+    box-shadow: 0 8px 24px rgba(55, 105, 160, 0.08);
+}
+
+#pedidos-especiales h2 {
+    color: #244d7c;
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+#pedidos-especiales > p {
+    color: #58718e;
+    text-align: center;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 0 auto 25px;
+}
+
+#formulario-pedido {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 550px;
+    margin: 25px auto 0;
+}
+
+#formulario-pedido label {
+    color: #294f7b;
+    font-weight: 600;
+}
+
+#formulario-pedido input,
+#formulario-pedido select,
+#formulario-pedido textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 14px;
+    border: 1px solid #cbdcf0;
+    border-radius: 12px;
+    font: inherit;
+    color: #304b68;
+    background-color: #ffffff;
+    outline: none;
+}
+
+#formulario-pedido input:focus,
+#formulario-pedido select:focus,
+#formulario-pedido textarea:focus {
+    border-color: #78a9e4;
+    box-shadow: 0 0 0 3px rgba(120, 169, 228, 0.15);
+}
+
+#formulario-pedido .boton {
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 14px 18px;
+    border-radius: 12px;
+    background: #315f96;
+    color: white;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+#formulario-pedido .boton:hover {
+    background: #244b78;
+}
+
+.ayuda-formulario {
+    color: #58718e;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    #pedidos-especiales {
+        margin: 25px 12px;
+        padding: 25px 16px;
+    }
+
+    #pedidos-especiales h2 {
+        font-size: 23px;
+    }
+}
+/* Tarjetas para elegir la tienda */
+
+.tiendas-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin: 12px 0 20px;
+}
+
+.tarjeta-tienda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 110px;
+    padding: 18px 12px;
+    background: linear-gradient(145deg, #ffffff, #edf5ff);
+    border: 2px solid #c6dcf5;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(49, 95, 150, 0.08);
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.nombre-tienda {
+    color: #294f7b;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.texto-tienda {
+    color: #7187a0;
+    font-size: 12px;
+    text-align: center;
+}
+
+.tarjeta-tienda:hover {
+    border-color: #78a9e4;
+    background: #f7faff;
+    transform: translateY(-2px);
+}
+
+.tarjeta-tienda.seleccionada {
+    background: #e3efff;
+    border-color: #315f96;
+    box-shadow: 0 0 0 2px rgba(49, 95, 150, 0.10);
+}
+
+.tarjeta-tienda.seleccionada .nombre-tienda {
+    color: #1f4776;
+}
+
+@media (max-width: 380px) {
+    .tiendas-grid {
+        gap: 8px;
+    }
+
+    .nombre-tienda {
+        font-size: 15px;
+    }
+}
+/* Opciones de talla, color y cantidad */
+.opcion-producto {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 8px 0 16px;
+    padding: 12px;
+    color: #294f7b;
+    background-color: #ffffff;
+    border: 1px solid #c6dcf5;
+    border-radius: 12px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Cuando la clienta selecciona una opción */
+.opcion-producto:focus {
+    border-color: #78a9e4;
+    box-shadow: 0 0 0 3px rgba(120, 169, 228, 0.18);
+}
+
+/* Etiquetas de las opciones */
+.producto label {
+    display: block;
+    margin-top: 10px;
+    color: #294f7b;
+    font-size: 14px;
+    font-weight: 600;
+}
+/* Diseño elegante para las tarjetas de productos */
+.producto {
+    background-color: #ffffff;
+    border: 1px solid #dce9f8;
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(41, 79, 123, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el cursor */
+.producto:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(41, 79, 123, 0.15);
+}
+
+/* Imágenes de los productos */
+.producto img {
+    width: 100%;
+    max-width: 320px;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 18px;
+    border-radius: 14px;
+}
+
+/* Nombre del producto */
+.producto h3 {
+    color: #294f7b;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+/* Precio */
+.producto .precio {
+    color: #477fbd;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+/* Diseño elegante para las tarjetas de productos */
+.producto {
+    background-color: #ffffff;
+    border: 1px solid #dce9f8;
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(41, 79, 123, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el cursor */
+.producto:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(41, 79, 123, 0.15);
+}
+
+/* Imágenes de los productos */
+.producto img {
+    width: 100%;
+    max-width: 320px;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 18px;
+    border-radius: 14px;
+}
+
+/* Nombre del producto */
+.producto h3 {
+    color: #294f7b;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+/* Precio */
+.producto .precio {
+    color: #477fbd;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+/* Adaptación de la tienda para celulares */
+@media (max-width: 600px) {
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 12px;
+    }
+
+    .producto {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 16px;
+    }
+
+    .producto img {
+        width: 100%;
+        max-width: 100%;
+        height: 280px;
+        object-fit: cover;
+    }
+
+    .producto h3 {
+        font-size: 19px;
+    }
+
+    .boton {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 14px;
+    }
+
+    #carrito-compras {
+        padding: 16px;
+        margin: 15px 10px;
+    }
+
+    .opcion-producto {
+        font-size: 16px;
+    }
+}
+/* Diseño del carrito de compras */
+#carrito-compras {
+    background-color: #f2f7ff;
+    border: 1px solid #d6e6fa;
+    border-radius: 18px;
+    padding: 25px;
+    margin: 30px auto;
+    max-width: 900px;
+    box-shadow: 0 5px 18px rgba(41, 79, 123, 0.08);
+}
+
+/* Título del carrito */
+#carrito-compras h2 {
+    color: #294f7b;
+    margin-bottom: 20px;
+}
+
+/* Lista de productos seleccionados */
+#lista-carrito {
+    padding-left: 20px;
+}
+
+/* Cada producto dentro del carrito */
+#lista-carrito li {
+    background-color: #ffffff;
+    border: 1px solid #dce9f8;
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 12px;
+    color: #294f7b;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+/* Total del pedido */
+#carrito-compras h3 {
+    color: #294f7b;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+/* Botones de eliminar productos */
+#lista-carrito li button {
+    background-color: #e5effc;
+    color: #294f7b;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin: 8px;
+    cursor: pointer;
+}
+/* Sección de contacto de Monse Shop */
+#contacto {
+    background: linear-gradient(135deg, #f2f7ff, #e3efff);
+    border: 1px solid #d3e4fa;
+    border-radius: 20px;
+    padding: 30px 20px;
+    margin: 35px auto;
+    max-width: 850px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(41, 79, 123, 0.08);
+    box-sizing: border-box;
+}
+
+/* Título de contacto */
+#contacto h2 {
+    color: #294f7b;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* Nombre de la tienda */
+#contacto h3 {
+    color: #477fbd;
+    font-size: 21px;
+    margin-bottom: 18px;
+}
+
+/* Teléfono y dirección */
+#contacto p {
+    color: #294f7b;
+    font-size: 16px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+/* Enlaces de contacto */
+#contacto a {
+    color: #356da8;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Efecto al pasar el cursor */
+#contacto a:hover {
+    color: #1f426b;
+    text-decoration: underline;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 600px) {
+    #contacto {
+        margin: 25px 12px;
+        padding: 24px 16px;
+    }
+
+    #contacto h2 {
+        font-size: 23px;
+    }
+}
