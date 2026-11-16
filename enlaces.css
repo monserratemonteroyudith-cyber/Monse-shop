@@ -1,0 +1,100 @@
+
+/* ESTILO GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #222222;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 35px 20px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.contenedor {
+    width: 100%;
+    max-width: 430px;
+    text-align: center;
+}
+
+/* LOGO */
+.logo {
+    width: 190px;
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* TITULO */
+h1 {
+    font-size: 27px;
+    color: #222222;
+    margin-bottom: 12px;
+}
+
+/* DESCRIPCION */
+.descripcion {
+    font-size: 15px;
+    color: #666666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* BOTONES */
+.enlaces {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.boton {
+    display: block;
+    background-color: #38B6FF;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* EFECTO AL PASAR EL CURSOR */
+.boton:hover {
+    background-color: #2099DF;
+    transform: translateY(-2px);
+}
+
+/* PIE DE PAGINA */
+footer {
+    margin-top: 35px;
+    font-size: 13px;
+    color: #777777;
+    line-height: 1.8;
+}
+
+/* PRESENTACIÓN DE MONSE SHOP */
+
+.presentacion {
+    text-align: left;
+    margin: 25px 0;
+    line-height: 1.8;
+}
+
+.presentacion h2 {
+    color: #38B6FF;
+    font-size: 20px;
+    margin: 22px 0 10px;
+}
+
+.presentacion p {
+    color: #555555;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
